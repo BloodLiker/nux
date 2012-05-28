@@ -1,5 +1,5 @@
 # http://ubuntuforums.org/showthread.php?t=1493702
-# v_1.5
+# v_1.5.0.1
 
 # NickServ stuff identify update etc
 # !maze
@@ -207,7 +207,7 @@ while True:
 
 		# Urban Dictionary
 		if cmd == 'ud':
-			conn = httplib.HTTPConnection("www.urbandictionary.com/")
+			conn = httplib.HTTPConnection("www.urbandictionary.com")
 			conn.request("GET", "/define.php?term=" + arg)
 			r1 = conn.getresponse()
 			sola = r1.read()
