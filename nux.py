@@ -216,6 +216,7 @@ while True:
 			for line in saloLines:
 				if line.find('class="definition"') != -1:
 					sola = re.sub( r'<[^>]*>', '', line )
+					break
 			print sola
 			send( 'PRIVMSG '+target+' :'+sola+'\r\n' )
 
