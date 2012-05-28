@@ -1,5 +1,5 @@
 # http://ubuntuforums.org/showthread.php?t=1493702
-# v_1.5.0.1
+# v_1.5.0.2
 
 # NickServ stuff identify update etc
 # !maze
@@ -117,7 +117,6 @@ while True:
 			# make some one a god!
 			if cmd == 'god':
 				if len(arg.split()) > 0:
-					# 1 line
 					arg = arg.split()[0]
 					if arg in gods:
 						send( 'PRIVMSG '+target+' :'+arg+' on jo jumala!\r\n' )
@@ -150,7 +149,7 @@ while True:
 			# help
 			if cmd == 'help':
 				send( 'PRIVMSG ' + target + ' :jumalakomennot: !quit !nick !join !part !god !say !topic !mode\r\n' )
-				send( 'PRIVMSG ' + target + ' :kuolevaisten komennot: !wa !day !help\r\n' )
+#				send( 'PRIVMSG ' + target + ' :kuolevaisten komennot: !wa !day !ud !help\r\n' )
 
 			# devil
 			if cmd == 'devil':
@@ -166,10 +165,10 @@ while True:
 
 		# Non-admin commands
 
-		else:
-			# help
-			if cmd == 'help':
-				send( 'PRIVMSG ' + target + ' :kuolevaisten komennot: !wa !day !help\r\n' )
+#		else:
+		# help
+		if cmd == 'help':
+			send( 'PRIVMSG ' + target + ' :kuolevaisten komennot: !wa !day !ud !help\r\n' )
 
 		# Wolfram|Alpha
 		if cmd == 'wa':
