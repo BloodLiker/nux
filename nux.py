@@ -1,11 +1,11 @@
 # http://ubuntuforums.org/showthread.php?t=1493702
-# v_1.4.4.4
+# v_1.5
 
 # NickServ stuff identify update etc
 # !maze
 # !ban kick when joins (ban 3s autojoin client)
 # scands
-# !ub urban dictionary
+# !ud urban dictionary
 # !ef english-finnish
 # !fe finnish-english
 # !pic (spam)
@@ -32,10 +32,11 @@ def send( cats ):
 	if cats.count( "\r\n" ) > 4:
 		print 'too many lines'
 		# todo: rewrite this awful shit
+		# todo: send rest of lines private (code to !wa section)
 		irc.send( cats.split( "\r\n" )[0] + '\r\n' )
 		irc.send( cats.split( "\r\n" )[1] + '\r\n' )
 		irc.send( cats.split( "\r\n" )[2] + '\r\n' )
-		irc.send( cats.split( "\r\n" )[3] + ' (more...)\r\n' )
+		irc.send( cats.split( "\r\n" )[3] + ' [ more... ]\r\n' )
 	else:
 		irc.send( cats )
 	print '^^ ' + cats
@@ -203,6 +204,20 @@ while True:
 					fun = re.sub( r'<[^>]*>', '', line )
 			print fun
 			send( 'PRIVMSG '+target+' :'+fun+'\r\n' )
+
+		# Urban Dictionary
+		if cmd == 'ud':
+			conn = httplib.HTTPConnection("www.urbandictionary.com/")
+			conn.request("GET", "/define.php?term=" + arg)
+			r1 = conn.getresponse()
+			sola = r1.read()
+			conn.close()
+			saloLines = sola.split("\n")
+			for line in saloLines:
+				if line.find('class="definition"') != -1:
+					sola = re.sub( r'<[^>]*>', '', line )
+			print sola
+			send( 'PRIVMSG '+target+' :'+sola+'\r\n' )
 
 	# Messages
 	elif re.match( '^:[^!]*![^@]*@[^ ]* PRIVMSG', data ):
