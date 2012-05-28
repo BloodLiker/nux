@@ -1,5 +1,5 @@
 # http://ubuntuforums.org/showthread.php?t=1493702
-# v_1.4.4.2
+# v_1.4.4.3
 
 # NickServ stuff identify update etc
 # !maze
@@ -32,6 +32,7 @@ def send( cats ):
 	if cats.count( "\r\n" ) > 4:
 		print 'too many lines'
 		print( cats.split( "\r\n" )[0:3] )
+		print( cats.split( "\r\n" )[3] + ' (more...)' )
 	else:
 		irc.send( cats )
 	print '^^ ' + cats
