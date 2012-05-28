@@ -1,39 +1,7 @@
 # http://ubuntuforums.org/showthread.php?t=1493702
-# 0.30 removed \r\n from arg
-# 0.31 added \r\n to irc.send( arg )
-# 0.32 added ownnick length to Mui.
-# 0.33 added spaces to msg parser
-# 0.34 simpler msgparser
-# 0.35 added KICK to target parser
-# 0.36 target match now uses regex and .split()[n]
-# 0.37 added op list
-# 0.38 added !wa
-# 1.0 named bot.py -> nux.py
-# 1.1 added say
-# 1.1.1 "!op" (no arguments) doesn't kill it 
-# 1.1.2 "!op  " doesn't kill it 
-# 1.1.3 "!join 0" doesn't kill it 
-# 1.1.4 !wa now enters \n to different lines
-# 1.2 added url title info
-# 1.3 added !day
-# 1.3.1 whines if someone says Pantteri (it's pantteri!)
-# 1.3.2 topiclock, KICK target optimization
-# 1.3.3 topiclock fix
-# 1.3.4 no topic spam (no change if it was nux)
-# 1.3.5 Mui. when someone joins
-# 1.3.6 fixed Mui.
-# 1.3.7 fixed arg ('\r\n'), fully finnish in IRC
-# 1.3.8 added !mode
-# 1.3.9 send() and minor bug fixes
-# 1.3.10 owner is now Felix instead of pantteri
-# 1.3.11 added hm? when hilight
-# 1.3.12 disabled Mui., sola!, ok and hm?
-# 1.4 added !devil and !help
-# 1.4.1 bug fixes
-# v_1.4.1
+# v_1.4.2
 
-
-# NickServ stuff identify update
+# NickServ stuff identify update etc
 # !maze
 # !ban kick when joins (ban 3s autojoin client)
 # scands
@@ -54,7 +22,7 @@ import urllib
 import httplib
 import HTMLParser
 
-network = 'irc.northpole.fi'
+network = 'irc.paivola.fi'
 port = 6667
 target = 'Felix'
 ownnick = 'nux'
@@ -142,8 +110,8 @@ while True:
 			if cmd == 'god':
 				if len(arg.split()) > 0:
 					# 1 line
-#					arg = arg.split()[0]
-					if (arg = arg.split()[0]) in gods:
+					arg = arg.split()[0]
+					if arg in gods:
 						send( 'PRIVMSG '+target+' :'+arg+' on jo jumala!\r\n' )
 					else:
 						gods.append(arg)
@@ -179,8 +147,8 @@ while True:
 			# devil
 			if cmd == 'devil':
 				if len(arg.split()) > 0:
-#					arg = arg.split()[0]
-					if (arg = arg.split()[0]) in gods:
+					arg = arg.split()[0]
+					if arg in gods:
 						gods.remove(arg)
 						send( 'PRIVMSG '+target+' :'+arg+' ei ole enaa jumala!\r\n' )
 					else:
