@@ -29,8 +29,8 @@ ownnick = 'nux'
 gods = ['Felix']
 
 def send( cats ):
-	if cats.count( "\r\n" ) > 4:
-		irc.send( cats )
+#	if cats.count( "\r\n" ) > 4:
+	irc.send( cats )
 	print '^^ ' + cats
 
 topicLock = False
