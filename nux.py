@@ -1,5 +1,5 @@
 # http://ubuntuforums.org/showthread.php?t=1493702
-# v_1.4.2
+# v_1.4.4
 
 # NickServ stuff identify update etc
 # !maze
@@ -29,8 +29,10 @@ ownnick = 'nux'
 gods = ['Felix']
 
 def send( cats ):
-#	if cats.count( "\r\n" ) > 4:
-	irc.send( cats )
+	if cats.count( "\r\n" ) > 4:
+		print 'too many lines'
+	else:
+		irc.send( cats )
 	print '^^ ' + cats
 
 topicLock = False
