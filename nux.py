@@ -1,5 +1,5 @@
 # http://ubuntuforums.org/showthread.php?t=1493702
-# v_1.5.0.4
+# v_1.5.0.6
 
 # NickServ stuff identify update etc
 # !maze
@@ -210,9 +210,10 @@ while True:
 			conn = httplib.HTTPConnection("www.urbandictionary.com")
 			conn.request("GET", "/define.php?term=" + urllib.quote_plus(arg))
 			r1 = conn.getresponse()
-			sola = r1.read()
+			epasola = r1.read()
 			conn.close()
-			saloLines = sola.split("\n")
+			saloLines = epasola.split("\n")
+			sola = "ei tuloksia"
 			for line in saloLines:
 				if line.find('class="definition"') != -1:
 					sola = re.sub( r'<[^>]*>', '', line )
