@@ -1,5 +1,5 @@
 # http://ubuntuforums.org/showthread.php?t=1493702
-# v_1.4.4.3
+# v_1.4.4.4
 
 # NickServ stuff identify update etc
 # !maze
@@ -31,8 +31,11 @@ gods = ['Felix']
 def send( cats ):
 	if cats.count( "\r\n" ) > 4:
 		print 'too many lines'
-		print( cats.split( "\r\n" )[0:3] )
-		print( cats.split( "\r\n" )[3] + ' (more...)' )
+		# todo: rewrite this awful shit
+		irc.send( cats.split( "\r\n" )[0] + '\r\n' )
+		irc.send( cats.split( "\r\n" )[1] + '\r\n' )
+		irc.send( cats.split( "\r\n" )[2] + '\r\n' )
+		irc.send( cats.split( "\r\n" )[3] + ' (more...)\r\n' )
 	else:
 		irc.send( cats )
 	print '^^ ' + cats
