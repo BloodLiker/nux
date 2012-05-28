@@ -148,8 +148,8 @@ while True:
 
 			# help
 			if cmd == 'help':
-				send( 'PRIVMSG ' + target + ' :jumalakomennot: !quit !nick !join !part !god !say !topic !mode\r\n' )
-#				send( 'PRIVMSG ' + target + ' :kuolevaisten komennot: !wa !day !ud !help\r\n' )
+				send( 'PRIVMSG ' + target + 
+				' :jumalakomennot: !quit !nick !join !part !god !say !topic !mode !devil\r\n' )
 
 			# devil
 			if cmd == 'devil':
