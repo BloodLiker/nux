@@ -5,7 +5,6 @@
 # !maze
 # !ban kick when joins (ban 3s autojoin client)
 # scands
-# !ud urban dictionary
 # !ef english-finnish
 # !fe finnish-english
 # !pic (spam)

@@ -1,0 +1,516 @@
+<!DOCTYPE html><html><head><title> pi - Wolfram|Alpha</title><meta charset="utf-8" /><!--<meta property="og:title" content="pi - Wolfram|Alpha"/><meta property="og:description" content="Check out these dynamically computed results from Wolfram|Alpha!"/>--><meta name="description" content="The answer to pi... Enter what you want to calculate or know about in science, nutrition, history, geography, engineering, mathematics, linguistics, sports, finance, music..." /><!--[if IE]><![endif]--><link href="/compress/css/Alpha-201205111041-concatenated-min.css" rel="stylesheet" /><link rel="Shortcut Icon" href="//www.wolframcdn.com/alphaFav.ico" /><link rel="icon" href="//www.wolframcdn.com/images/alpha.fav.png" type="image/png" /><link rel="image_src" href="//www.wolframcdn.com/share-fb-icon.png" /><link rel="search" type="application/opensearchdescription+xml" href="/searchDescription.xml" title="Wolfram|Alpha"/><!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--><!--[if lte IE 9]><link rel='stylesheet' type='text/css' media='screen' href='/Calculate/css/ieall.css'><![endif]--><!--[if IE 8]><link rel='stylesheet' media='screen' href='/Calculate/css/ie8.css' /><![endif]--><!--[if lte IE 7]><link rel='stylesheet' media='screen' href='/compress/css/Alpha-201205111041-ie-min.css' /><![endif]--><!-- The code below handles :hover and :active for IE6 and below --><!--[if lt IE 7]><style>
+   body {behavior: url(/Calculate/javascript/csshover.htc);}
+</style><link href="/Calculate/css/ie6.css" rel="stylesheet" /><![endif]--><script>
+document.domain = "wolframalpha.com";
+var jsonArray = {"popups":{}, "imgs":{}, "ajaxHandles":{}};
+document.documentElement.className += " loading";
+/* TEST for data uri support */
+var data = new Image();
+data.onload = data.onerror = function(){
+        if(this.width != 1 || this.height != 1)
+                document.documentElement.className += " no-datauri";
+}
+data.src = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";
+</script></head><body><div id="wrap" ><header class="common"><nav id="navbar"><ul id="siteNav"><li id="navHome"><a href="/" title="Wolfram|Alpha Home">Home</a></li><li><a href="/examples/" title="Wolfram|Alpha Examples by Topic">Examples</a></li><li><a href="http://products.wolframalpha.com" title="Wolfram|Alpha Products">Products</a></li><li><a href="http://blog.wolframalpha.com" title="Wolfram|Alpha Blog">Blog</a></li><li><a href="/about.html" title="About Wolfram|Alpha">About</a></li></ul><ul id="resourcesNav"><li id="navMore"><a id="openMore" href="#more" rel="jump" title="More"><span>&nbsp;</span></a><ul class="menu" id="more"><li><a href="http://www.wolfram.com/">Wolfram Research</a></li><li class="line">&nbsp;</li><li><a href="http://www.wolfram.com/products/mathematica/">Wolfram <i>Mathematica</i></a></li><li><a href="http://demonstrations.wolfram.com/">Wolfram Demonstrations</a></li><li><a href="http://mathworld.wolfram.com/">Wolfram <i>MathWorld</i></a></li><li><a href="http://www.wolframscience.com/">Wolfram Science</a></li><li><a href="http://tones.wolfram.com/">Wolfram<i>Tones</i></a></li><li class="line">&nbsp;</li><li><a href="http://www.wolfram.com/webresources.html">More &raquo;</a></li></ul></li></ul><a id="oauth_signin" href="#">Sign in &raquo;</a></nav></header>
+
+<article class="headerad-pro" id="headerad-pro-b"><a href="/pro/?src=pro-banner" class="headerad-pro-linkwrap" target="_blank"><div class="headerad-pro-text">Experience the next big step in computational knowledge</div><span class="headerad-pro-button"> Wolfram Alpha Pro &raquo; </span><br class="clear" /></a><a href="#" class="headerad-close">X</a></article><div id="calculatecontain" class="expanded"><div class="un-spacer expanded"><div id='moreSearches' class='formLinks'><a href='/examples/?src=input' id='searchExamples'>Examples</a><a href='/input/random.jsp' id='searchRandom'>Random</a></div><div id='moreInput'><div class="inputtab" id='inputtab-keyboard'><a href='#'></a></div><div class="inputtab" id="inputtab-images"><a href='#'></a></div><div class='inputtab disabled' id='inputtab-drawing'><a href='#'></a></div><div class='inputtab disabled' id='inputtab-audio'><a href='#'></a></div><div class="inputtab" id="inputtab-datainput"><a href='#'></a></div><div class="inputtab" id="inputtab-genfiles"><a href='#'></a></div><div class='inputtab disabled' id='inputtab-connections'><a href='#'></a></div></div><div id="shadowCover"></div><div id="inputTabs"><div id="inputTabs-wrap"><div id="inputpanel-images" class="inputpanel noasync empty"><h2 id="imageinput-heading" class="tray-input-heading"><span class="icon bigicons"></span>Image Input<span class="icon-branding"></span><a class="inputpanel-closebtn">X</a></h2><a id="images-info" alt="Image Upload Information" href="#"></a><div id="imginput-topcontain" class="disabled"><div id="imginput-upforms"><div id="imginput-browselabel">
+        Upload an image from your computer:
+      </div><iframe delaysrc="/input/images.syncupload.jsp" id="imginput-syncupload" border="0" frameBorder="0"></iframe><input type="file" name="imageupload" id="imginput-upload" size="33" disabled="disabled"/><div id="imginput-urllabel">
+        Enter a URL for an image:
+      </div><input  disabled="disabled" type="text" name="imageurl" id="imginput-url" />&nbsp;<input type="button" id="imginput-urlgo" class="wa-button  disabled" value="Go"  disabled="disabled"/></div><br class="clear" /><div id="imginput-termsfooter" class="input-terms"><a href="/termsofuse/" id="imginput-terms" target="_blank">Terms</a> | <a href="/privacypolicy.html" id="imginput-policy" target="_blank">Privacy</a></div></div><div id="imginput-bottomcontain"><div id="imginput-listctrl"></div><div id="imginput-listcontain"><a href="#" id="imginput-allfiles">All images &raquo;</a><a href="#" id="imginput-filestoggle"><span class="icon plusminus"></span>Recent images</a><div id="imginput-fileslist" class="empty ">
+	Loading...
+      </div><a href="#" id="imginput-samplestoggle" class="on"><span class="icon plusminus"></span>Sample images</a><div id="imginput-sampleslist" class="show"><div id="imginput-sampleslist-wrap"><div id="imginput-sampleslist-images"><div class="imglib-sampleitem" id="imglib-sampleitem1" data-filepath="ImageInput/QuinSconce.png" data-querieslist="colorize+components,detect+edges,colorize+image,gradient+filter"><div class="filename-mdown"><span data-imgsrc="/input/samplethumb/QuinSconce_thumb.png" class="imglib-item"></span></div></div><div class="imglib-sampleitem" id="imglib-sampleitem2" data-filepath="ImageInput/TwoLions.png" data-querieslist="oilpainting+effect,gradient+filter,convert+to+grayscale,permute+colors"><div class="filename-mdown"><span data-imgsrc="/input/samplethumb/TwoLions_thumb.png" class="imglib-item"></span></div></div><div class="imglib-sampleitem" id="imglib-sampleitem3" data-filepath="ImageInput/ClockTicks.png" data-querieslist="detect+edges,colorize+components,gradient+filter,create+a+sepia+image"><div class="filename-mdown"><span data-imgsrc="/input/samplethumb/ClockTicks_thumb.png" class="imglib-item"></span></div></div><div class="imglib-sampleitem" id="imglib-sampleitem4" data-filepath="ImageInput/WestminsterAbbey.png" data-querieslist="oilpainting+effect,colorize+image,gradient+filter,colorize+components"><div class="filename-mdown"><span data-imgsrc="/input/samplethumb/WestminsterAbbey_thumb.png" class="imglib-item"></span></div></div><div class="imglib-sampleitem" id="imglib-sampleitem5" data-filepath="ImageInput/BloodCells.png" data-querieslist="highlight+red+components,binarize,foresting+components,morphological+perimeter"><div class="filename-mdown"><span data-imgsrc="/input/samplethumb/BloodCells_thumb.png" class="imglib-item"></span></div></div><div class="imglib-sampleitem" id="imglib-sampleitem6" data-filepath="ImageInput/OriginOfSpecies.png" data-querieslist="ocr,binarize,sharpen,add+border"><div class="filename-mdown"><span data-imgsrc="/input/samplethumb/OriginOfSpecies_thumb.png" class="imglib-item"></span></div></div><div class="imglib-sampleitem" id="imglib-sampleitem7" data-filepath="ImageInput/ColorPlates.png" data-querieslist="separate+colors,highlight+blue+components,geometric+mean+filter,quantize+colors"><div class="filename-mdown"><span data-imgsrc="/input/samplethumb/ColorPlates_thumb.png" class="imglib-item"></span></div></div><div class="imglib-sampleitem" id="imglib-sampleitem8" data-filepath="ImageInput/PaisleyPattern.png" data-querieslist="colorize+components,count+components,fill+holes,delete+border+components"><div class="filename-mdown"><span data-imgsrc="/input/samplethumb/PaisleyPattern_thumb.png" class="imglib-item"></span></div></div></div><div id="imglib-sampletext" title="Try these sample images and see what Wolfram|Alpha Pro can do."></div><br class="clear" /></div></div></div></div></div>
+<div id="inputpanel-datainput" class="inputpanel empty"><h2 id="datainput-heading" class="tray-input-heading"><span class="icon bigicons"></span>Data Input<span class="icon-branding"></span><a class="inputpanel-closebtn">X</a></h2><div id="datainput-topcontain" class="disabled"><div id="datainput-givedata"><span id="datainput-blurb">Give numeric, tabular, or other data. </span><span style="font-size:11px;"> More information &raquo;</span></div><textarea id="datainput-textarea" autocomplete="off" disabled="disabled"></textarea><div id="datainput-savedone"><div class="datainput-savedonewrap"><a href="#" class="wa-button disabled" id="datainput-save">Save for Later Use</a><br/></div><div class="datainput-savedonewrap"><a href="#" class="bubblebtn  wa-button disabled" id="datainput-done">Use without Saving</a><br/></div></div><br class="clear" /><div id="datainput-termsfooter" class="input-terms"><span style="font-size:11px;float:left;">Upload a file &raquo;</span><a href="/termsofuse/" id="datainput-terms" target="_blank">Terms</a> | <a href="/privacypolicy.html" id="datainput-policy" target="_blank">Privacy</a></div></div><div id="datainput-bottomcontain"><div id="datainput-listcontain"><a href="#" id="datainput-allfiles">All data &raquo;</a><a href="#" id="datainput-filestoggle"><span class="icon"></span>Recent data</a><div id="datainput-fileslist" class="empty ">
+	Loading...
+      </div><a href="#" id="datainput-samplestoggle" class="on"><span class="icon"></span>Sample data</a><div id="datainput-sampleslist" class="show"><div class="datainput-item" data-filepath="DataInput/categories-currency" data-querieslist="ANOVA,data+summaries,regression" data-description="Funds&#x20;raised&#x20;by&#x20;political&#x20;candidates"><div class="filename-mdown"><div class="datainput-icon"></div><a href="#" class="datainput-name">
+	      categories-currency</a></div></div><div class="datainput-item" data-filepath="DataInput/dates-categories" data-querieslist="timeline+plot,label+counts" data-description="Timeline&#x20;of&#x20;personal&#x20;emails"><div class="filename-mdown"><div class="datainput-icon"></div><a href="#" class="datainput-name">
+	      dates-categories</a></div></div><div class="datainput-item" data-filepath="DataInput/countries-currency-numbers" data-querieslist="heat+map,statistics,possible+distributions,regression+analysis" data-description="GDP&#x20;vs&#x20;homicide&#x20;for&#x20;various&#x20;countries"><div class="filename-mdown"><div class="datainput-icon"></div><a href="#" class="datainput-name">
+	      countries-currency-numbers</a></div></div><div class="datainput-item" data-filepath="DataInput/dates-currency-1" data-querieslist="timeseries+statistics,timeseries+plot" data-description="Intel&#x20;corporation&#x20;stock&#x20;data&#x20;over&#x20;three&#x20;months"><div class="filename-mdown"><div class="datainput-icon"></div><a href="#" class="datainput-name">
+	      dates-currency-1</a></div></div><div class="datainput-item" data-filepath="DataInput/dates-numbers" data-querieslist="timeseries+plot,timeseries+statistics,fit" data-description="Daily&#x20;temperatures&#x20;in&#x20;Rome&#x20;over&#x20;ten&#x20;years"><div class="filename-mdown"><div class="datainput-icon"></div><a href="#" class="datainput-name">
+	      dates-numbers</a></div></div><div class="datainput-item" data-filepath="DataInput/categories-numbers" data-querieslist="regression,data+summaries" data-description="Salaries&#x20;and&#x20;statistics&#x20;of&#x20;college&#x20;faculty&#x20;members"><div class="filename-mdown"><div class="datainput-icon"></div><a href="#" class="datainput-name">
+	      categories-numbers</a></div></div><div class="datainput-item" data-filepath="DataInput/dates-currency-2" data-querieslist="possible+fit,growth+summary" data-description="Median&#x20;house&#x20;prices&#x20;in&#x20;Boston,&#x20;spanning&#x20;21&#x20;years"><div class="filename-mdown"><div class="datainput-icon"></div><a href="#" class="datainput-name">
+	      dates-currency-2</a></div></div><div class="datainput-item" data-filepath="DataInput/categories-numbers-genders" data-querieslist="ANOVA,regression" data-description="Titanic&#x20;survivors&#x20;by&#x20;gender,&#x20;age,&#x20;and&#x20;class"><div class="filename-mdown"><div class="datainput-icon"></div><a href="#" class="datainput-name">
+	      categories-numbers-genders</a></div></div><div class="datainput-item" data-filepath="DataInput/cities" data-querieslist="shortest+tour" data-description="Cities&#x20;along&#x20;the&#x20;silk&#x20;road"><div class="filename-mdown"><div class="datainput-icon"></div><a href="#" class="datainput-name">
+	      cities</a></div></div><div class="datainput-item" data-filepath="DataInput/dates-categories-names-currency" data-querieslist="statistics,running+totals,analysis+of+variance,timeseries+statistics" data-description="List&#x20;of&#x20;credit&#x20;card&#x20;expenses"><div class="filename-mdown"><div class="datainput-icon"></div><a href="#" class="datainput-name">
+	      dates-categories-names-currency</a></div></div><div class="datainput-item" data-filepath="DataInput/countries-currency" data-querieslist="statistics,histogram" data-description="Costs&#x20;of&#x20;flights&#x20;starting&#x20;in&#x20;London"><div class="filename-mdown"><div class="datainput-icon"></div><a href="#" class="datainput-name">
+	      countries-currency</a></div></div><div class="datainput-item" data-filepath="DataInput/states-genders-counts-currencies" data-querieslist="regression,heat+map" data-description="Movie&#x20;purchases&#x20;in&#x20;different&#x20;states"><div class="filename-mdown"><div class="datainput-icon"></div><a href="#" class="datainput-name">
+	      states-genders-counts-currencies</a></div></div><div class="datainput-item" data-filepath="DataInput/email-addresses" data-querieslist="graph" data-description="Subset&#x20;of&#x20;Enron&#x20;email&#x20;correspondences"><div class="filename-mdown"><div class="datainput-icon"></div><a href="#" class="datainput-name">
+	      email-addresses</a></div></div><div class="datainput-item" data-filepath="DataInput/cities-types-currency" data-querieslist="map" data-description="Roofing&#x20;materials&#x20;cost&#x20;in&#x20;different&#x20;cities"><div class="filename-mdown"><div class="datainput-icon"></div><a href="#" class="datainput-name">
+	      cities-types-currency</a></div></div><div id="datainput-sampleslist-tip" title="Try this sample data and see what Wolfram|Alpha Pro can do."></div></div></div></div></div>
+<div id="inputpanel-genfiles" class="inputpanel noasync empty"><h2 id="genfilesinput-heading" class="tray-input-heading"><span class="icon bigicons"></span>File Upload<span class="icon-branding"></span><a class="inputpanel-closebtn">X</a></h2><div id="genfiles-topcontain" class="disabled"><div id="genfiles-upforms"><div id="genfiles-browselabel">
+        Upload a file from your computer:
+      </div><iframe delaysrc="/input/genfiles.syncupload.jsp" id="genfiles-syncupload" border="0" frameBorder="0"></iframe><input type="file" name="genfileupload" id="genfiles-upload" size="33" disabled="disabled" /><div id="genfiles-urllabel">
+        Enter a URL for a file:
+      </div><input type="text" name="genfileurl" id="genfiles-url" disabled="disabled" />&nbsp;<input type="button" id="genfiles-urlgo" class="wa-button disabled" value="Go" disabled="disabled" /><br class="clear" /></div><br class="clear" /><div id="genfiles-termsfooter" class="input-terms"><br/><span style="float:left;">Copy &amp; paste as input &raquo;</span><a href="/termsofuse/" id="genfiles-terms" target="_blank">Terms</a> | <a href="/privacypolicy.html" id="genfiles-policy" target="_blank">Privacy</a></div><br class="clear" /></div><div id="genfiles-bottomcontain"><div id="genfiles-listcontain"><a href="#" id="genfiles-allfiles">All files &raquo;</a><a href="#" id="genfiles-filestoggle"><span class="icon plusminus"></span>Recent files</a><div id="genfiles-fileslist" class="">
+	  Loading
+	</div><a href="#" id="genfiles-samplestoggle" class=""><span class="icon plusminus"></span>Supported formats and sample files</a><div class="trayArrow"></div><div id="genfiles-allsamples" class="gen-samples lightbox-shadows-light lightbox-rounded"><h2 id="genfiles-samplesheading" class="lightbox-roundedtop">Supported formats and sample files</h2><div id="genfiles-allsamplescontain"><a href="#" class="close">X</a><div id="genfiles-samplescontent"><div class="genfiles-samplessect"><h3>Basic formats</h3><a href="#" class="genfiles-sampletype" data-filepath="FileUpload/AliceInWonderland.txt" data-querieslist="">Text</a>,&#32;<a href="#" class="genfiles-sampletype" data-filepath="FileUpload/UnixBinary.bin" data-querieslist="byte+occurrences,longest+alphanumeric+runs,bitmap+image,file+size,null+byte+density">Binary</a>,&#32;<a href="#" class="genfiles-sampletype" data-filepath="FileUpload/Campaign.xls" data-querieslist="">XLS</a>,&#32;<span class="genfiles-sampleshidden"><a href="#" class="genfiles-sampletype" data-filepath="FileUpload/Shape.tsv" data-querieslist="">TSV</a>,&#32;<a href="#" class="genfiles-sampletype" data-filepath="FileUpload/Months.csv" data-querieslist="">CSV</a>,&#32;<a href="#" class="genfiles-sampletype" data-filepath="FileUpload/1970.xlsx" data-querieslist="">XLSX</a></span><a href="#" class="genfiles-samplesmore">more &raquo;</a><br /></div><hr class="divider" /><div class="genfiles-samplessect"><h3>Image formats</h3><a href="#" class="genfiles-sampletype" data-filepath="FileUpload/ZebraHead.gif" data-querieslist="colorize+image,standard+deviation+filter,lighten+image+by+.25,apply+commonest+filter,reflect+image+along+the+diagonal">GIF</a>,&#32;<a href="#" class="genfiles-sampletype" data-filepath="FileUpload/Ladybug.jpg" data-querieslist="color+permutation,highlight+red+objects,shen-castan+edge+detection,commonest+filter+with+radius+4,sepia+effect">JPEG</a>,&#32;<a href="#" class="genfiles-sampletype" data-filepath="FileUpload/Snail.png" data-querieslist="image+smoothing,posterize+image+using+10+colors,image+closing,show+image+histogram,subtract+.5+from+image">PNG</a>,&#32;<span class="genfiles-sampleshidden"><a href="#" class="genfiles-sampletype" data-filepath="FileUpload/Gate.tif" data-querieslist="invert+colors,image+erosion,binarize+image+with+threshold+t,apply+gradient+filter+with+radius+r,apply+laplacian+filter">TIFF</a>,&#32;<a href="#" class="genfiles-sampletype" data-filepath="FileUpload/SubmarineGauges.jp2" data-querieslist="charcoal+effect,top+hat+transform,add+.5+to+image,distort+image,take+image+deconvolution">JPEG2000</a>,&#32;<a href="#" class="genfiles-sampletype" data-filepath="FileUpload/Dragonfly.bmp" data-querieslist="max+filter,apply+wiener+filter,marr+edges,permute+colors,find+morphological+components">BMP</a>,&#32;<a href="#" class="genfiles-sampletype" data-filepath="FileUpload/WebColors.aco" data-querieslist="swatch,RGB+value,red,green,blue">ACO</a>,&#32;<a href="#" class="genfiles-sampletype" data-filepath="FileUpload/BaldEagle.tga" data-querieslist="color+separation,oil+painting,get+image+color+space,image+closing+with+radius+8,crop+60+pixels+from+the+left">TGA</a>,&#32;<a href="#" class="genfiles-sampletype" data-filepath="FileUpload/Mathematica.ico" data-querieslist="colorize+image,convert+to+grayscale,apply+laplacian+filter,highlight+red+objects,shen-castan+edge+detection">ICO</a>,&#32;<a href="#" class="genfiles-sampletype" data-filepath="FileUpload/Oblivion.pcx" data-querieslist="increase+brightness+by+.5,get+the+number+of+color+channels,embossing+effect,detect+edges,subtract+.5+from+image">PCX</a>,&#32;<a href="#" class="genfiles-sampletype" data-filepath="FileUpload/LunchTime.pbm" data-querieslist="find+morphological+components,morphological+perimeter,image+type,distort+image,fill+image+holes">PBM</a>,&#32;<a href="#" class="genfiles-sampletype" data-filepath="FileUpload/Bullfight.pgm" data-querieslist="rotate+image+by+45+degrees,invert+colors,find+edges,oil+painting,image+smoothing">PGM</a>,&#32;<a href="#" class="genfiles-sampletype" data-filepath="FileUpload/CowSkull.pnm" data-querieslist="apply+geometric+mean+filter,apply+entropy+filter,set+gamma+to+.7,sobel+edge+detection,apply+perona+malik+filter">PNM</a>,&#32;<a href="#" class="genfiles-sampletype" data-filepath="FileUpload/BookTunnel.ppm" data-querieslist="get+the+number+of+color+channels,increase+image+contrast+by+.5,sample+pixel+value,apply+gradient+filter+with+radius+r,clip+color+values+to+.25%2C+.75">PPM</a>,&#32;<a href="#" class="genfiles-sampletype" data-filepath="FileUpload/Teapot.pxr" data-querieslist="optimize+palette+to+10+colors,chan-vese+binarization,set+gamma+to+2.2,normalize+image,apply+range+filter">PXR</a>,&#32;<a href="#" class="genfiles-sampletype" data-filepath="FileUpload/RomanescoBroccoli.sct" data-querieslist="invert+colors,get+image+border+size,apply+commonest+filter,partition+image,image+perspective+transform">SCT</a>,&#32;<a href="#" class="genfiles-sampletype" data-filepath="FileUpload/SpiralPhyllotaxis.xbm" data-querieslist="image+components,apply+skeleton+transform,remove+small+components,apply+radon+transform,hit+miss+transform+%7B%7B-1%2C-1%7D%2C%7B-1%2C1%7D%7D">XBM</a></span><a href="#" class="genfiles-samplesmore">more &raquo;</a><br /></div><hr class="divider" /><div class="genfiles-samplessect"><h3>Vector graphics formats</h3><a href="#" class="genfiles-sampletype" data-filepath="FileUpload/AboutWolframAlpha.pdf" data-querieslist="">PDF</a>,&#32;<a href="#" class="genfiles-sampletype" data-filepath="FileUpload/Dahlia.eps" data-querieslist="">EPS</a></div><hr class="divider" /><div class="genfiles-samplessect"><h3>3D geometry & modeling formats</h3><a href="#" class="genfiles-sampletype" data-filepath="FileUpload/Guitar.ply" data-querieslist="3D+image,properties,bounding+box,volume,polygons">PLY</a>,&#32;<a href="#" class="genfiles-sampletype" data-filepath="FileUpload/Seashell.off" data-querieslist="3D+image,properties,bounding+box,volume,polygons">OFF</a>,&#32;<a href="#" class="genfiles-sampletype" data-filepath="FileUpload/KleinBottle.noff" data-querieslist="3D+image,properties,bounding+box,volume,polygons">NOFF</a>,&#32;<a href="#" class="genfiles-sampletype" data-filepath="FileUpload/Rings.byu" data-querieslist="3D+image,properties,bounding+box,volume,polygons">BYU</a>,&#32;<a href="#" class="genfiles-sampletype" data-filepath="FileUpload/Wrench.obj" data-querieslist="3D+image,properties,bounding+box,volume,polygons">OBJ</a>,&#32;<span class="genfiles-sampleshidden"><a href="#" class="genfiles-sampletype" data-filepath="FileUpload/SphericalModel.vtk" data-querieslist="3D+image,properties,bounding+box,volume,polygons">VTK</a>,&#32;<a href="#" class="genfiles-sampletype" data-filepath="FileUpload/BlendingSpheres.jvx" data-querieslist="3d+image,creation+date,tree,image,valid">JVX</a>,&#32;<a href="#" class="genfiles-sampletype" data-filepath="FileUpload/CartesianModel.lwo" data-querieslist="3D+image,properties,bounding+box,volume,polygons">LWO</a>,&#32;<a href="#" class="genfiles-sampletype" data-filepath="FileUpload/LegoMan.3ds" data-querieslist="3D+image,properties,bounding+box,volume,polygons">3DS</a>,&#32;<a href="#" class="genfiles-sampletype" data-filepath="FileUpload/CubeStack.rib" data-querieslist="3D+image,properties,bounding+box,volume,polygons">RIB</a>,&#32;<a href="#" class="genfiles-sampletype" data-filepath="FileUpload/Spikey.dxf" data-querieslist="3D+image,properties,bounding+box,volume,polygons">DXF</a>,&#32;<a href="#" class="genfiles-sampletype" data-filepath="FileUpload/CubePattern.stl" data-querieslist="3D+image,properties,bounding+box,volume,polygons">STL</a></span><a href="#" class="genfiles-samplesmore">more &raquo;</a><br /></div><hr class="divider" /><div class="genfiles-samplessect"><h3>Audio formats</h3><a href="#" class="genfiles-sampletype" data-filepath="FileUpload/FrequencyModulation.aiff" data-querieslist="file+type,sample+rate,channels,source+information,sample+encoding,bit+depth">AIFF</a>,&#32;<a href="#" class="genfiles-sampletype" data-filepath="FileUpload/LogisticMapBifurcation.flac" data-querieslist="file+type,source+information,file+size,bit+depth,channels,duration">FLAC</a>,&#32;<a href="#" class="genfiles-sampletype" data-filepath="FileUpload/SquareWave.wav" data-querieslist="bit+depth,duration,reverse,sample+encoding,waveform,sample+rate">WAV</a>,&#32;<span class="genfiles-sampleshidden"><a href="#" class="genfiles-sampletype" data-filepath="FileUpload/RisingGlissando.au" data-querieslist="reverse,source+information,number+of+channels,bit+depth,spectrogram,file+size">AU</a>,&#32;<a href="#" class="genfiles-sampletype" data-filepath="FileUpload/WhiteNoise.snd" data-querieslist="file+size,sample+encoding,data+size,spectrogram,waveform,reverse">SND</a>,&#32;<a href="#" class="genfiles-sampletype" data-filepath="FileUpload/SquareWave.w64" data-querieslist="sample+encoding,waveform,file+type,bit+depth,reverse,source+information">WAVE64</a></span><a href="#" class="genfiles-samplesmore">more &raquo;</a><br /></div><hr class="divider" /><div class="genfiles-samplessect"><h3>Scientific & medical formats</h3><a href="#" class="genfiles-sampletype" data-filepath="FileUpload/OzoneMap.hdf" data-querieslist="datasets,format,dimension">HDF</a>,&#32;<a href="#" class="genfiles-sampletype" data-filepath="FileUpload/RoseRaster.h5" data-querieslist="datasets,metadata,format,dimension,attributes">HDF5</a>,&#32;<a href="#" class="genfiles-sampletype" data-filepath="FileUpload/SeaSurfaceTemperature.cdf" data-querieslist="datasets,metadata,format,dimension,attributes">NASACDF</a>,&#32;<a href="#" class="genfiles-sampletype" data-filepath="FileUpload/Precipitation.nc" data-querieslist="datasets,metadata,format,dimension,attributes">NetCDF</a>,&#32;<a href="#" class="genfiles-sampletype" data-filepath="FileUpload/Messier61.fits" data-querieslist="">FITS</a>,&#32;<a href="#" class="genfiles-sampletype" data-filepath="FileUpload/HeadMRI.dcm" data-querieslist="">DICOM</a>,&#32;<span class="genfiles-sampleshidden"><a href="#" class="genfiles-sampletype" data-filepath="FileUpload/Calibration.bdf" data-querieslist="datasets,label,device,range+of+data">BDF</a>,&#32;<a href="#" class="genfiles-sampletype" data-filepath="FileUpload/EEG.edf" data-querieslist="datasets,label,device,range+of+data">EDF</a>,&#32;<a href="#" class="genfiles-sampletype" data-filepath="FileUpload/Temperature.grb" data-querieslist="datasets,metadata,format,dimension,attributes">GRIB</a></span><a href="#" class="genfiles-samplesmore">more &raquo;</a><br /></div><hr class="divider" /><div class="genfiles-samplessect"><h3>Chemical formats</h3><a href="#" class="genfiles-sampletype" data-filepath="FileUpload/CaffeineMolecule.xyz" data-querieslist="3D+structure,molecular+weight,elemental+composition">XYZ</a>,&#32;<a href="#" class="genfiles-sampletype" data-filepath="FileUpload/FluoxetineMolecule.mol" data-querieslist="structure+diagram,3D+structure,molecular+weight,elemental+composition,bonds">MOL</a>,&#32;<a href="#" class="genfiles-sampletype" data-filepath="FileUpload/AbacavirMolecule.mol2" data-querieslist="structure+diagram,3D+structure,molecular+weight,elemental+composition,bonds">MOL2</a>,&#32;<a href="#" class="genfiles-sampletype" data-filepath="FileUpload/PineOilMolecule.sdf" data-querieslist="structure+diagram,3D+structure,molecular+weight,elemental+composition,bonds">SDF</a>,&#32;<span class="genfiles-sampleshidden"><a href="#" class="genfiles-sampletype" data-filepath="FileUpload/CarbolicAcidMolecule.smi" data-querieslist="structure+diagram,compound+formula,molecular+weight,elemental+composition">SMILES</a>,&#32;<a href="#" class="genfiles-sampletype" data-filepath="FileUpload/Mitochondrion.fa" data-querieslist="sequence,properties,length,melting+point,GC-content">FASTA</a>,&#32;<a href="#" class="genfiles-sampletype" data-filepath="FileUpload/Mitochondrion.gbk" data-querieslist="sequence,properties,length,melting+point,GC-content">GenBank</a>,&#32;<a href="#" class="genfiles-sampletype" data-filepath="FileUpload/PrimateMitochondrion.nex" data-querieslist="sequence,properties,length,melting+point,GC-content">NEXUS</a>,&#32;<a href="#" class="genfiles-sampletype" data-filepath="FileUpload/DNA.pdb" data-querieslist="">PDB</a></span><a href="#" class="genfiles-samplesmore">more &raquo;</a><br /></div><hr class="divider" /><div class="genfiles-samplessect"><h3>Mathematical formats</h3><a href="#" class="genfiles-sampletype" data-filepath="FileUpload/Moth.gml" data-querieslist="vertex+count,edge+count,features,chromatic+polynomial,adjacency+matrix">Graphlet</a>,&#32;<a href="#" class="genfiles-sampletype" data-filepath="FileUpload/CompleteTree2-3.gv" data-querieslist="vertex+count,edge+count,features,chromatic+polynomial,adjacency+matrix">DOT</a>,&#32;<a href="#" class="genfiles-sampletype" data-filepath="FileUpload/PentagonalPan.graphml" data-querieslist="vertex+count,edge+count,features,chromatic+polynomial,adjacency+matrix">GraphML</a>,&#32;<a href="#" class="genfiles-sampletype" data-filepath="FileUpload/BowTie.gxl" data-querieslist="vertex+count,edge+count,features,chromatic+polynomial,adjacency+matrix">GXL</a>,&#32;<span class="genfiles-sampleshidden"><a href="#" class="genfiles-sampletype" data-filepath="FileUpload/Diamond.col" data-querieslist="vertex+count,edge+count,features,chromatic+polynomial,adjacency+matrix">DIMACS</a>,&#32;<a href="#" class="genfiles-sampletype" data-filepath="FileUpload/Octahedral.g6" data-querieslist="vertex+count,edge+count,features,chromatic+polynomial,adjacency+matrix">Graph6</a>,&#32;<a href="#" class="genfiles-sampletype" data-filepath="FileUpload/Parachute.s6" data-querieslist="vertex+count,edge+count,features,chromatic+polynomial,adjacency+matrix">Sparse6</a>,&#32;<a href="#" class="genfiles-sampletype" data-filepath="FileUpload/Pentatope.lgr" data-querieslist="vertex+count,edge+count,features,chromatic+polynomial,adjacency+matrix">LEDA</a>,&#32;<a href="#" class="genfiles-sampletype" data-filepath="FileUpload/RisingSun.net" data-querieslist="vertex+count,edge+count,features,chromatic+polynomial,adjacency+matrix">Pajek</a>,&#32;<a href="#" class="genfiles-sampletype" data-filepath="FileUpload/BidirectedTriangle.tgf" data-querieslist="vertex+count,edge+count,features,chromatic+polynomial,adjacency+matrix">TGF</a>,&#32;<a href="#" class="genfiles-sampletype" data-filepath="FileUpload/Gaussian.mat" data-querieslist="">MAT</a>,&#32;<a href="#" class="genfiles-sampletype" data-filepath="FileUpload/DodecahedralAdjacency.mtx" data-querieslist="">MTX</a>,&#32;<a href="#" class="genfiles-sampletype" data-filepath="FileUpload/CoshIntegral.rse" data-querieslist="">HarwellBoeing</a></span><a href="#" class="genfiles-samplesmore">more &raquo;</a><br /></div><hr class="divider" /><div class="genfiles-samplessect"><h3>Document formats</h3><a href="#" class="genfiles-sampletype" data-filepath="FileUpload/SimpleTable6x2.html" data-querieslist="version,DTD,size,depth,namespace,tree,type,valid">HTML</a>,&#32;<a href="#" class="genfiles-sampletype" data-filepath="FileUpload/AboutWolframAlpha.pdf" data-querieslist="">PDF</a>,&#32;<a href="#" class="genfiles-sampletype" data-filepath="FileUpload/MathXPloratoriumList5Klines.mbox" data-querieslist="messages,number+messages,beginning,ending,histogram,recipients,senders,timeline">MBOX</a></div><hr class="divider" /><div class="genfiles-samplessect"><h3>XML formats</h3><a href="#" class="genfiles-sampletype" data-filepath="FileUpload/AnimatedMethane.xml" data-querieslist="version,DTD,size,depth,namespace,tree,type,valid">XML</a>,&#32;<a href="#" class="genfiles-sampletype" data-filepath="FileUpload/First10MersennePrimes.xhtml" data-querieslist="version,DTD,size,depth,namespace,tree,type,valid">XHTML</a>,&#32;<a href="#" class="genfiles-sampletype" data-filepath="FileUpload/NestedFraction.mml" data-querieslist="display+form,tree">MathML</a>,&#32;<span class="genfiles-sampleshidden"><a href="#" class="genfiles-sampletype" data-filepath="FileUpload/NestedFractionMathML.xml" data-querieslist="version,DTD,size,depth,namespace,tree,type,valid">XHTMLMathML</a>,&#32;<a href="#" class="genfiles-sampletype" data-filepath="FileUpload/NestedFractionExpressionML.xml" data-querieslist="version,DTD,size,depth,namespace,tree,type,valid">ExpressionML</a></span><a href="#" class="genfiles-samplesmore">more &raquo;</a><br /></div></div></div></div>
+<div id="genfiles-sampletext" title="Try these sample files and see what Wolfram|Alpha Pro can do."></div></div></div></div>
+</div></div><div id='haloGradient'></div></div><div class="spacer"><a href="/" class="ir normalLogo" id="logo" title="Wolfram|Alpha Computational Knowledge Engine">Wolfram|Alpha Computational Knowledge Engine</a><label class="" for="i" id="calcform-enterwhat">Enter what you want to calculate or know about:</label><form action="/input/" accept-charset="UTF-8" autocomplete="off" id="calculate" method="get"><fieldset id="input" class="expanded"><input id="i" name="i" maxlength="200" type="text" value="pi"  class=""/><input id="dataset-input" name="dataset" value="" type="hidden" /><div id="imath"></div><noscript><input type="hidden" name="asynchronous" value="false" /></noscript><div id="calculate-activefile" class="empty"></div><a id="star-inputfield" class="star-input star-disabled" href="#"></a><input type="submit" name="equal" id="equal" title="compute" value="Submit" /></fieldset></form></div></div><div id="results" class="fadechildren"><div id="solutions" class="nofade fadechildren"><noscript><p>To see full output on this page you need to enable JavaScript in your browser. <a href="nojs.jsp">More info &raquo;</a></p></noscript><form method="get" action="/input/" id="assumptions" class="now"><fieldset id="assumingSimple" class="assuming"><input type="hidden" name="i" id="iAssum" value="pi" />
+      <div>Assuming &quot;pi&quot; is a mathematical constant <span class="separator">|</span> Use as <a href="javascript:applyAssumption(1,'*C.pi-_*Character-')">a character</a> or <a href="javascript:applyAssumption(1,'*C.pi-_*MathWorld-')">referring to a mathematical definition</a> or <a href="javascript:applyAssumption(1,'*C.pi-_*MathWorldClass-')">a class of mathematical terms</a> or <a href="javascript:applyAssumption(1,'*C.pi-_*Movie-')">a movie</a> or <a href="javascript:applyAssumption(1,'*C.pi-_*Word-')">a word</a> instead<input type='hidden' id='a1' name='a' value="*C.pi-_*NamedConstant.dflt-" /></div></fieldset></form>
+
+<section id="answers" class="results-pod fade"><section id="pod_0100" class="pod "><h2>Input<span class="colon">:</span></h2><ul class="h"></ul><div id="subpod_0100_1" class="sub " data-s="cGk="data-mi="UGk="data-mo=""width="9"><div class="subpod-wrap"><div class="output pnt" id="scannerresult_0100_1"><img  height="18"width="9" src="http://www4b.wolframalpha.com/Calculate/MSP/MSP1011a1f83112f6g76b2000046c4g44g561h224a?MSPStoreType=image/gif&s=21&amp;w=9&amp;h=18" id="i_0100_1"  data-attribution="" /><!--esapi:encodeForURL(param.attribution) --></div><div class="subpod-controls"><a href="#subpod_0100_1_zoom" class="subpod-zoom">Enlarge</a><a class="subpod-export ">Data Download</a><a class="subpod-saveas">Customize & Save Image</a><a class="subpod-copyablept">Copyable Plaintext</a><a href="#subpod_0100_1_cdf" class="subpod-ascdf">Enable Interactivity</a><a class="subpod-dlcdf">Download as CDF</a><span class="subpod-rightedge"></span></div></div><div class="annotpod">
+    </div></div>
+
+
+
+<b id="pod_0100_button" class="pt fish"><a class="saveAsImg" href="#">Save as image &raquo;</a><a class="copyablept" href="#">Copyable plaintext &raquo;</a><a href="javascript:showmathpop('Pi');" id="mathsource" ><i>Mathematica</i> form &raquo;</a></b></section><section id="pod_0200" class="pod "><h2>Decimal approximation<span class="colon">:</span></h2><ul class="h"><li class="first btn"><a href="pod.jsp?id=MSP1031a1f83112f6g76b20000243cie4hfa9c80b9&amp;s=21&amp;button=1" id="substitute_0200_0">More digits</a></li></ul><div id="subpod_0200_1" class="sub " data-s="My4xNDE1OTI2NTM1ODk3OTMyMzg0NjI2NDMzODMyNzk1MDI4ODQxOTcxNjkzOTkzNzUxMDU4Li4u"data-mi="TltQaSwgNzFd"data-mo=""width="443"><div class="subpod-wrap"><div class="output pnt" id="scannerresult_0200_1"><img  height="20"width="443" src="http://www4b.wolframalpha.com/Calculate/MSP/MSP1061a1f83112f6g76b200000ca7937f3ag6i64a?MSPStoreType=image/gif&s=21&amp;w=443&amp;h=20" id="i_0200_1"  usemap="#map-0200_114" data-attribution="" /><!--esapi:encodeForURL(param.attribution) --><map id="map-0200_114" name="map-0200_114"><area shape="rect " coords="0,0,443,19" href="/input/?i=3.1415926535897932384626433832795028841971693993751058&lk=1&a=ClashPrefs_*Math-" alt="link to /input/?i=3.1415926535897932384626433832795028841971693993751058&lk=1&a=ClashPrefs_*Math-" /></map></div><div class="subpod-controls"><a href="#subpod_0200_1_zoom" class="subpod-zoom">Enlarge</a><a class="subpod-export ">Data Download</a><a class="subpod-saveas">Customize & Save Image</a><a class="subpod-copyablept">Copyable Plaintext</a><a href="#subpod_0200_1_cdf" class="subpod-ascdf">Enable Interactivity</a><a class="subpod-dlcdf">Download as CDF</a><span class="subpod-rightedge"></span></div></div><div class="annotpod">
+    </div></div>
+
+
+
+</section><section id="pod_0300" class="pod "><h2>Property<span class="colon">:</span></h2><div id="subpod_0300_1" class="sub " data-s="cGkgaXMgYSB0cmFuc2NlbmRlbnRhbCBudW1iZXI="data-mi="RWxlbWVudFtQaSwgQWxnZWJyYWljc10="data-mo="RmFsc2U="width="194"><div class="subpod-wrap"><div class="output pnt" id="scannerresult_0300_1"><img  height="18"width="194" src="http://www4b.wolframalpha.com/Calculate/MSP/MSP1101a1f83112f6g76b2000064314a46369hh0ae?MSPStoreType=image/gif&s=21&amp;w=194&amp;h=18" id="i_0300_1"  data-attribution="" /><!--esapi:encodeForURL(param.attribution) --></div><div class="subpod-controls"><a href="#subpod_0300_1_zoom" class="subpod-zoom">Enlarge</a><a class="subpod-export ">Data Download</a><a class="subpod-saveas">Customize & Save Image</a><a class="subpod-copyablept">Copyable Plaintext</a><a href="#subpod_0300_1_cdf" class="subpod-ascdf">Enable Interactivity</a><a class="subpod-dlcdf">Download as CDF</a><span class="subpod-rightedge"></span></div></div><div class="annotpod">
+    </div></div>
+
+
+
+</section><section id="pod_0400" class="pod loading"></section><section id="pod_0500" class="pod "><h2>Continued fraction<span class="colon">:</span></h2><ul class="h"><li class="first btn"><a href="pod.jsp?id=MSP1131a1f83112f6g76b200002cg068a2c2ddc7cd&amp;s=21&amp;button=1" id="substitute_0500_0">Fraction form</a></li><li class="btn"><a href="pod.jsp?id=MSP1141a1f83112f6g76b200004e7d18027h4e4ed2&amp;s=21&amp;button=1" id="substitute_0500_1">More terms</a></li></ul><div id="subpod_0500_1" class="sub " data-s="JiN4NWI7MyYjeDNiOyA3LCAxNSwgMSwgMjkyLCAxLCAxLCAxLCAyLCAxLCAzLCAxLCAxNCwgMiwgMSwgMSwgMiwgMiwgMiwgMiwgMSwgODQsIDIsIDEsIDEsIDE1LCAuLi4mI3g1ZDs="data-mi="Q29udGludWVkRnJhY3Rpb25bUGksIDI3XQ=="data-mo="ezMsIDcsIDE1LCAxLCAyOTIsIDEsIDEsIDEsIDIsIDEsIDMsIDEsIDE0LCAyLCAxLCAxLCAyLCAyLCAyLCAyLCAxLCA4NCwgMiwgMSwgMSwgMTUsIDN9"width="498"><div class="subpod-wrap"><div class="output pnt" id="scannerresult_0500_1"><img  height="20"width="498" src="http://www4b.wolframalpha.com/Calculate/MSP/MSP1171a1f83112f6g76b200005304498fi3982g8d?MSPStoreType=image/gif&s=21&amp;w=498&amp;h=20" id="i_0500_1"  data-attribution="" /><!--esapi:encodeForURL(param.attribution) --></div><div class="subpod-controls"><a href="#subpod_0500_1_zoom" class="subpod-zoom">Enlarge</a><a class="subpod-export ">Data Download</a><a class="subpod-saveas">Customize & Save Image</a><a class="subpod-copyablept">Copyable Plaintext</a><a href="#subpod_0500_1_cdf" class="subpod-ascdf">Enable Interactivity</a><a class="subpod-dlcdf">Download as CDF</a><span class="subpod-rightedge"></span></div></div><div class="annotpod">
+    </div></div>
+
+
+
+</section><div id="recalculateBar" class="pod loading"></div><div id="computed"  style="display:block;"><a href="http://www.wolfram.com/products/mathematica">
+        Computed by <b>Wolfram <i>Mathematica</i></b></a><a id="downloadAs">
+    Download page
+</a></div>
+</section><form id="feedback" method="post" action="sendmessage.jsp" accept-charset="UTF-8" class=""><fieldset><span id="giveus">Give us your feedback:  </span><input id="tmpMessage" type="text" readonly="readonly" autocomplete="off" /><div id="tmpSend" title="Send">send</div></fieldset></form></div><!-- end solutions --><script src="/compress/javascript/latency-201205111041-min.js"></script>
+<div id="lsidebar" class="fade"><aside id="proSidebar" class="sidebarLeftside"><div class="subsection" id="proside-favorites"><a class="heading empty" href="#">
+            Favorites
+        </a><div class="content"></div></div><div class="subsection" id="proside-history"><a class="heading empty " href="#">
+            History
+        </a><div class="content"></div></div><div class="subsection" id="proside-preferences"><a  id="proside-preference" class=" expands heading" href="#">Preferences</a><ul class="subnav"><li id="proside-pref-general" class="subsectionNav">General</li><li id="proside-pref-results" class="subsectionNav">Results</li><li id="proside-pref-homepage" class="subsectionNav lastNav">Home page</li></ul></div><div class="subsection" id="proside-downloaddata"><a class="heading empty " href="#">
+            Downloads
+        </a><div class="content"></div></div><div class="subsection" id="proside-uploads"><a class="heading expands empty " href="#">
+            Uploads
+        </a><ul class="subnav"><li id="proside-uploads-images" class="subsectionNav">Images</li><li id="proside-uploads-rawdata" class="subsectionNav">Data input</li><li id="proside-uploads-generic" class="subsectionNav lastNav">Files</li></ul></div><div class="subsection" id="proside-account"><a class="heading empty " href="#">
+            Account
+        </a><div class="content"></div></div></aside><aside id="relatedQueries" class="sidebarLeftside"><div class="subsection first" id="proside-related-q"><a class="heading" href="#">
+	  Related Queries
+	</a><div class="content empty"></div></div></aside><script type="text/javascript">
+function prosideHideRelatedQ(){
+    $("#proside-related-q").slideUp("fast",function(){
+	$(this).next().addClass("first");
+	$(this).parent("#relatedQueries").remove();
+    }).find(".heading").removeClass("open");
+}
+function prosideLoadRelatedQ(callback){
+    $("#proside-related-q .content").html('<div class="proside-loading"></div>');
+    $("#proside-related-q .content").show();
+    if (typeof jsonArray.relatedQueries != "undefined"){
+        $.get("/input/queries.aside.jsp", {'id' : jsonArray.relatedQueries.id, 's' : jsonArray.relatedQueries.server, 'pro' : 1 }, function(data) {
+	  $("#proside-related-q .content").delay(1000).slideUp("fast", function() {
+	    var jqobj = $(data);
+	    if (jqobj.get(0).id != "relatedq-wrap") {
+	      prosideHideRelatedQ();
+	    } else if (jqobj.find("a").length > 0 )
+	      $(this).html(data).slideDown("fast").parent().find(".heading").addClass("open");
+	    else prosideHideRelatedQ();
+	  }).removeClass("empty");
+	  if (typeof callback == "function")
+	    callback();
+	}).error(function(){
+	  prosideHideRelatedQ();
+	});
+    } else {  prosideHideRelatedQ(); }
+}
+//prosideLoadRelatedQ();
+</script></div><aside id="sidebar"><aside id="newbie"><div id="newbie-hat"></div><a href="/tour1.html" title="New to Wolfram|Alpha? Take the tour.">Take the tour &raquo;</a></aside>
+<aside id="share"><ul><li><a href="mailto:?subject=WolframAlpha%3a%20pi&amp;body=%0D%0A%0D%0A%0D%0ACheck%20this%20out%20on%20Wolfram%7cAlpha.%0D%0A%0D%0AOn%20the%20web%3a%0D%0Ahttp%3a%2f%2fwww.wolframalpha.com%2finput%2f%3fi%3dpi%26format%3dhtml%26mail%3d1%0D%0A%0D%0AIn%20a%20Wolfram%7cAlpha%20mobile%20app%3a%0D%0Awolframalpha%3a%2f%2f%2f%3fi%3dpi%26format%3dhtml%26mail%3d1" class="mail" target="_blank" title="Share via email">email</a></li><li><a href="http://wd.sharethis.com/api/sharer.php?title=WolframAlpha+-+pi&amp;publisher=1c0e0d54-547d-4312-9dde-61539c24e22f&amp;url=http%3a%2f%2fwww.wolframalpha.com%2finput%2f%3fi%3dpi%26format%3dhtml&amp;destination=twitter" class="twitter" target="_blank" title="Share via Twitter">Twitter</a></li><li><a href="#fb" class="facebook" rel="jump">Facebook</a><section id="fb"><div id="fb-root"></div><a href="http://wd.sharethis.com/api/sharer.php?title=WolframAlpha+-+pi&amp;publisher=1c0e0d54-547d-4312-9dde-61539c24e22f&amp;url=http%3a%2f%2fwww.wolframalpha.com%2finput%2f%3fi%3dpi%26format%3dhtml&amp;destination=facebook" class="fb on" target="_blank" title="Share via Facebook">Share via Facebook &raquo;</a><img src="/images/computing.gif" height="15" width="15" alt="loading" /></section></li><li><a href="#sharethis" class="more" rel="jump">More...</a><section id="sharethis"><div><h1>Share This Page</h1><ul><li><a href="http://wd.sharethis.com/api/sharer.php?title=WolframAlpha+-+pi&amp;publisher=1c0e0d54-547d-4312-9dde-61539c24e22f&amp;url=http%3a%2f%2fwww.wolframalpha.com%2finput%2f%3fi%3dpi%26format%3dhtml&amp;destination=reddit" class="reddit" target="_blank" title="Share via Reddit">Reddit</a></li><li><a href="http://wd.sharethis.com/api/sharer.php?title=WolframAlpha+-+pi&amp;publisher=1c0e0d54-547d-4312-9dde-61539c24e22f&amp;url=http%3a%2f%2fwww.wolframalpha.com%2finput%2f%3fi%3dpi%26format%3dhtml&amp;destination=stumbleupon" class="stumbleupon" target="_blank" title="Share via StumbleUpon">StumbleUpon</a></li><li><a href="http://wd.sharethis.com/api/sharer.php?title=WolframAlpha+-+pi&amp;publisher=1c0e0d54-547d-4312-9dde-61539c24e22f&amp;url=http%3a%2f%2fwww.wolframalpha.com%2finput%2f%3fi%3dpi%26format%3dhtml&amp;destination=delicious" class="delicious" target="_blank" title="Share via Delicious">Delicious</a></li><li><a href="http://wd.sharethis.com/api/sharer.php?title=WolframAlpha+-+pi&amp;publisher=1c0e0d54-547d-4312-9dde-61539c24e22f&amp;url=http%3a%2f%2fwww.wolframalpha.com%2finput%2f%3fi%3dpi%26format%3dhtml&amp;destination=digg" class="digg" target="_blank" title="Share via Digg">Digg</a></li><li><a href="http://wd.sharethis.com/api/sharer.php?title=WolframAlpha+-+pi&amp;publisher=1c0e0d54-547d-4312-9dde-61539c24e22f&amp;url=http%3a%2f%2fwww.wolframalpha.com%2finput%2f%3fi%3dpi%26format%3dhtml&amp;destination=blogger" class="blogger" target="_blank" title="Share via Blogger">Blogger</a></li><li><a href="http://wd.sharethis.com/api/sharer.php?title=WolframAlpha+-+pi&amp;publisher=1c0e0d54-547d-4312-9dde-61539c24e22f&amp;url=http%3a%2f%2fwww.wolframalpha.com%2finput%2f%3fi%3dpi%26format%3dhtml&amp;destination=googleplus" class="googleplus" target="_blank" title="Share via Google+">Google +1</a></li><li><a href="http://wd.sharethis.com/api/sharer.php?title=WolframAlpha+-+pi&amp;publisher=1c0e0d54-547d-4312-9dde-61539c24e22f&amp;url=http%3a%2f%2fwww.wolframalpha.com%2finput%2f%3fi%3dpi%26format%3dhtml&amp;destination=wordpress" class="wordpress" target="_blank" title="Share via Wordpress">Wordpress</a></li><li><a href="http://wd.sharethis.com/api/sharer.php?title=WolframAlpha+-+pi&amp;publisher=1c0e0d54-547d-4312-9dde-61539c24e22f&amp;url=http%3a%2f%2fwww.wolframalpha.com%2finput%2f%3fi%3dpi%26format%3dhtml&amp;destination=windows_live" class="live" target="_blank" title="Share via Windows Live">Live</a></li><li><a href="http://wd.sharethis.com/api/sharer.php?title=WolframAlpha+-+pi&amp;publisher=1c0e0d54-547d-4312-9dde-61539c24e22f&amp;url=http%3a%2f%2fwww.wolframalpha.com%2finput%2f%3fi%3dpi%26format%3dhtml&amp;destination=typepad" class="typepad" target="_blank" title="Share via TypePad">TypePad</a></li><li><a href="http://wd.sharethis.com/api/sharer.php?title=WolframAlpha+-+pi&amp;publisher=1c0e0d54-547d-4312-9dde-61539c24e22f&amp;url=http%3a%2f%2fwww.wolframalpha.com%2finput%2f%3fi%3dpi%26format%3dhtml&amp;destination=tumblr" class="tumblr" target="_blank" title="Share via Tumblr">Tumblr</a></li><!--
+         <li><a href="http://wd.sharethis.com/api/sharer.php?title=WolframAlpha+-+pi&amp;publisher=1c0e0d54-547d-4312-9dde-61539c24e22f&amp;url=http%3a%2f%2fwww.wolframalpha.com%2finput%2f%3fi%3dpi%26format%3dhtml&amp;destination=ybuzz" class="ybuzz" target="_blank" title="Share via Yahoo! Buzz">Yahoo! Buzz</a></li>
+--><li><a href="http://wd.sharethis.com/api/sharer.php?title=WolframAlpha+-+pi&amp;publisher=1c0e0d54-547d-4312-9dde-61539c24e22f&amp;url=http%3a%2f%2fwww.wolframalpha.com%2finput%2f%3fi%3dpi%26format%3dhtml&amp;destination=myspace" class="myspace" target="_blank" title="Share via MySpace">MySpace</a></li><li><a href="http://wd.sharethis.com/api/sharer.php?title=WolframAlpha+-+pi&amp;publisher=1c0e0d54-547d-4312-9dde-61539c24e22f&amp;url=http%3a%2f%2fwww.wolframalpha.com%2finput%2f%3fi%3dpi%26format%3dhtml&amp;destination=linkedin" class="linkedin" target="_blank" title="Share via LinkedIn">LinkedIn</a></li></ul><br class="clear" /></div><a href="http://www.sharethis.com/share?title=WolframAlpha+-+pi&amp;publisher=1c0e0d54-547d-4312-9dde-61539c24e22f&amp;url=http%3a%2f%2fwww.wolframalpha.com%2finput%2f%3fi%3dpi%26format%3dhtml" class="all" target="_blank" title="Share via ShareThis">View all sites &raquo;</a><form id="WPsubmit" class="isHidden" action="http://wd.sharethis.com/api/sharer.php" method="get"><h6>Post to Wordpress:</h6><label>http://</label><input name="wpurl" type="text"></input><br style="clear: both;" /><div style="float: right;"><input type="hidden" name="destination" value="wordpress" /><input type="hidden" name="url" id="WPthisUrl" value="http://www.wolframalpha.com/input/?i=pi&format=html" /><input type="hidden" name="title" value="WolframAlpha - pi" /><input type="hidden" name="publisher" value="1c0e0d54-547d-4312-9dde-61539c24e22f" /><input type="button" class="grayButton" value="cancel" /><input type="submit" class="grayButton" value="send" /></div><br style="clear: both;" /></form></section><li><a href="#widget" class="widget" rel="jump">Build a widget based on this result &raquo;</a><section id="widget"><h1>Create a Wolfram|Alpha Web Widget</h1><p>Use your query "<b>pi</b>" to create an interactive widget to embed on your blog or website.</p><a href="http://developer.wolframalpha.com/widgetbuilder/step1.jsp?input=pi&newQuery=true&txt=2" class="ir" title="Create a Wolfram|Alpha web widget">Build a widget based on this result &raquo;</a><a href="http://developer.wolframalpha.com/widgets/" target="_blank" title="Learn more about Wolfram|Alpha Widgets">Learn more about Wolfram|Alpha Widgets &raquo;</a></section></li></ul></aside>
+<aside id="sponsor-ad" class="sidepod"><span id="adsurl" class="hide" title="/ads.txt?ad=http://www.wolframcdn.com/sponsor-ads/everyday-lang-omg.png&newbie=true"></span><a id="spons-bound" class="track-me" href="http://www.wolfram.com/solutions/education/students/"></a><div class="related-content"><img class="main-img" src="http://www.wolframcdn.com/sponsor-ads/everyday-lang-omg.png"  ><img class="hover-img" src="http://www.wolframcdn.com/sponsor-ads/everyday-lang-omg.png" ></div></aside></aside>
+</div><!-- end contents -->
+<footer class="common fade"><ul><li class="noimg"><a href="/about.html" title="About Wolfram|Alpha">About</a></li><li><a href="/pro/?src=footer" title="Wolfram|Alpha Pro">Pro</a></li><li><a href="http://products.wolframalpha.com/" title="Wolfram|Alpha Products">Products</a></li><li><a href="http://products.wolframalpha.com/mobile/" title="Wolfram|Alpha Mobile Apps">Mobile Apps</a></li><li><a href="http://products.wolframalpha.com/business/" title="Wolfram|Alpha Business Solutions">Business Solutions</a></li><li><a href="http://products.wolframalpha.com/developers/" title="Wolfram|Alpha for Developers">For Developers</a></li><li><a href="/resources/" title="Wolfram|Alpha Resources & Tools">Resources &amp; Tools</a></li><li class="noimg"><a href="http://blog.wolframalpha.com/" title="Wolfram|Alpha Blog">Blog</a></li><li><a href="http://community.wolframalpha.com/" title="Wolfram|Alpha Community Forum">Forum</a></li><li><a href="/participate/" title="Participate in the Wolfram|Alpha Project">Participate</a></li><li><a href="/contact.html" title="Contact Wolfram|Alpha">Contact</a></li><li class="foot-connect"><a href="/social/" title="Connect" class="connect">Connect <span class="connect-icons"></span></a></li></ul><ul class="copy"><li class="noimg"><span title="KMS070892">&copy;</span> 2012 Wolfram Alpha LLC&mdash;A <a href="http://www.wolfram.com/">Wolfram Research</a> Company</li><li><a href="/termsofuse.html" title="Wolfram|Alpha Terms of Use">Terms</a></li><li><a href="/privacypolicy.html" title="Wolfram|Alpha Privacy Policy">Privacy</a></li><li><a href="/entities/index/" title="Wolfram|Alpha Entity Index">Entity Index</a></li></ul><p id="launchpartner">[&nbsp;Infrastructure for this computation provided by Wolfram|Alpha compute partner <a class="track-me"
+ 	href="http://www.dell.com" target="_blank">Dell, Inc.</a>.&nbsp;]</p></footer>
+
+
+</div><!-- end #wrap --><div id="preferenceBox" class="lightbox lightbox-shadows"></div>
+
+<script>
+if (top !== self) {
+    top.location.replace(self.location.href);
+    document.body.innerHTML = "";
+}
+</script><script>
+var server = 'http://www4b.wolframalpha.com';
+var parsedExpr = 'XRFHJhjPzKIsoX\x2FGwnocvyfH3lrqVZWq';
+var assumptionsMade = '{}';
+var rawAssumptions = '{{\"C\", \"pi\"} -> {\"NamedConstant\", \"Character\", \"MathWorld\", \"MathWorldClass\", \"Movie\", \"Word\"}}';
+var server = 'http://www4b.wolframalpha.com';
+var inputEsc = 'pi';
+var escapedInput = "pi";
+var downloadKey = 'MSP1191a1f83112f6g76b20000426e12f38bg543gg&s=21';
+var hasTimeouts = 'True';
+var fileinput = "";
+fileinput = fileinput.replace("\/WolframAlphaProUploads\/", "");
+var isDataInput = "false";
+var trayParam = "";
+
+var popupJS = "/Calculate/javascript/Alpha-201205111041-popup.js";
+var iPadCSS = "/Calculate/css/iPad-min.css";
+
+
+var country = "Finland";
+
+var type = "";
+var podselector = "";
+var slinks = "false";
+
+var isPost = "false" == "true";
+var savedDataInput = "";
+
+var cdfCallouts = true;
+var user = '';
+var exportdata = '';
+
+window.machineNumber = "21";
+
+
+
+var inputFileIds = "";
+
+</script><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script><script src="/compress/javascript/Alpha-201205111041-init-min.js"></script><script>
+/* <![CDATA[ */
+
+$(function(){
+
+        asynchronousPod("pod.jsp?id=21MSP1111a1f83112f6g76b200004ag7f164a8bb74f4&caption=", "0400", "pi", "", "", "NumberLine" );
+
+if (typeof debuginfo != "undefined"){
+  debuginfo.asyncpods++;
+  debuginfo.updateall();
+}
+
+    
+ if("recalculate.jsp?id=21MSP1181a1f83112f6g76b200001e25c9ig9ha17769&asynchronous=pod&i=pi&fp=1") {
+	 recalculate("recalculate.jsp?id=21MSP1181a1f83112f6g76b200001e25c9ig9ha17769&asynchronous=pod&fp=1&i=pi&format=html");
+ }
+
+
+
+});
+
+ /* ]]> */
+</script>
+
+
+<script src="/compress/javascript/Alpha-201205111041-concatenated-min.js"></script><div id="lightboxOverlay" >&nbsp;</div><script>
+  // if the input is data or image or a file
+  window.isFileInput = 'False';
+</script><div id="subpod_zoom" class=""><div class="arrow"></div><a class="close">x</a><h3>Output Zoom</h3><p>Zoom in to see an enlarged view of any output.</p><a class="bubblebtn md-btn startfreetrial" id="subpod-zoom">
+           Start FREE Pro Trial
+       </a><br/><br/><a href="/pro/?src=subpod-zoom" class="learn-pro">
+           Learn about all Pro features &raquo;
+       </a></div>
+<div id="butane" class="lightbox lightbox-rounded"><div id="butane-left" class="lightbox-rounded"><div id="butane-relativeDiv"><p id="butane-adtext">Advertisement</p></div></div><div id="butane-right"><p class="butane-upgrade"><a id="butane-upgradebtn" class="bubblebtn md-btn" href="/pro/?src=popupad">Upgrade to Pro</a></p></div><span class="countdown">Close in <em id="countdownnum">_</em> seconds</span><a class="close-btn" href="#">Close this &raquo;</a><br class="clear" /></div><script>
+$(document).ready(function(){
+  if (shouldShowPageLoadAd()) {
+    setupRandomBlockingAd();
+    $("#butane iframe").load(function(){
+      showBlockingAd();
+    });
+  } else {
+    $("#butane").hide();
+  }
+});
+</script>
+<div id="addToFavForm" class="sbsform"><a href="#" class="close">X</a><span class="arrow"></span><form id="editFav" action="/input/pro/leftsidebar/queries/managefavorites.jsp" method="POST"><h2>Edit this favorite</h2><div id="addToFavFields"><div class="f"><label for="favQuery">Query:</label><div id="favform-favQuery-wrap"><input id="favQuery" name="query" class="required" type="text" readonly="true" value="" /></div></div><div class="f"><label for="favTags">Tag: </label><input id="favTags" name="tags" class="required" type="text" value="" /></div><div class="f"><label for="favNotes">Notes: </label><input id="favNotes" name="notes" type="text" value="" /></div></div><!--fields --><a id="favRemove"  formaction="/input/pro/leftsidebar/queries/managefavorites.jsp" formmethod="post" type="submit" style="display:none;">Remove from favorites</a><div class="favbuttons"><button id="favDone" class="bubblebtn">Done</button><br class="clr" /></div></form></div>
+<div id="pro-tipbubble" class="tipbubble-simple">&nbsp;</div><script src="/javascript/adpatch.js"></script><script>
+    window.user = new User({
+                     "signedin": false,
+	
+                      "prologo": false,
+                "trialeligible": true,
+                 "needsupgrade": false,
+              "hassubscription": false,
+                      "haspaid": false,
+                     "hastrial": false,
+          "hadpaidsubscription": false,
+                     "hadTrial": false,
+                 "hascancelled": false,
+		
+                    "favorites": false,
+                      "history": false,
+                  "saveasimage": false,
+                "customization": false,
+                 "downloaddata": false,
+                   "imageinput": false,
+                    "datainput": false,
+                      "fupload": false,
+                         "zoom": false,
+                     "keyboard": false,
+                          "cdf": false,
+                          "pdf": false,
+                        "embed": false,
+           "generalpreferences": false,
+            "resultpreferences": false,
+          "homepagepreferences": false,
+          "storedownloadeddata": false,
+                    "removeads": false,
+               "cdfinteractive": false,
+               "longertimeouts": false,
+                "copyplaintext": false,
+              "downloadblocked": false,
+                "uploadblocked": false
+    });
+    window.prolevel = "0";
+
+    
+      $(document).ready(function(){
+	
+	  if (shouldShowPageLoadAd()) {
+	    makeProAdPopup();
+	    checkAnnoyanceAd();
+	  }
+	
+	$(".pod .h .btn a").live("click",function(e){
+	  triggerButtonAd();
+	});
+      });
+    </script><script>
+    $(document).ready(function(){
+      $(".pod img[usemap]").maphilight();
+    });
+</script><!--[if lt IE 10]><script src="/compress/javascript/Alpha-201205111041-ie-min.js"></script><![endif]--><script>
+/* <![CDATA[ */
+
+$(document).ready(function() {
+
+    
+});
+
+  jsonArray.relatedQueries = {};
+  jsonArray.relatedQueries.id = "MSP971a1f83112f6g76b200004e567i2512c2a4b2";
+  jsonArray.relatedQueries.server = "21";
+
+
+
+    inst = "PRD";
+    checkForSessionTimeout();
+
+/* ]]> */
+</script><script>
+
+ // google analysis tracking setup
+var _gaq = [['_setAccount', 'UA-5677369-3'], ['_trackPageview'],['_trackPageLoadTime']];
+_gaq.push(['alphaads._setAccount', 'UA-25371504-1']);
+_gaq.push(['alphaads._setDomainName', 'none']);
+_gaq.push(['alphaads._setAllowLinker', true]);
+_gaq.push(['alphaads._trackPageview']);
+
+
+
+// pro level tracking
+_gaq.push(['_setCustomVar', 1, "ProLevel", "None", 1]);
+
+(function(d, t) {
+  var g = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+  g.async = true;
+  g.src = '//www.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g, s);
+}(document, 'script'));
+
+// sharethis+google analysis tracking setup
+if($("#share").length > 0) {
+  var pageTracker = [];
+  if (_gaq._getAsyncTracker) {
+    pageTracker = _gaq._getAsyncTracker('');
+  }
+  var addthis_config = {
+    data_ga_tracker: pageTracker,
+    data_track_clickback: true,
+  };
+}
+
+// cross-domain links tracking setup
+$("#sources .content ul ul li a, .keypopup a[rel=external], #navMore ul#more li a").live("click.pageTracker", function(e){
+  pageTracker = _gaq._getAsyncTracker('');
+  if (typeof pageTracker != "undefined" && typeof pageTracker._link != "undefined")
+    pageTracker._link(this.href);
+});
+$("#relatedlinks div[id^=relatedLink]").live("click.pageTracker", function(e){
+  pageTracker = _gaq._getAsyncTracker('');
+  if (typeof pageTracker != "undefined" && typeof pageTracker._link != "undefined")
+    pageTracker._link($(this).find("a[id^=siteLink]").get(0).href);
+});
+
+</script><script>(function() {
+var stscr = document.createElement('script'); stscr.type = 'text/javascript'; stscr.async = true;
+stscr.src ="http://w.sharethis.com/button/light.js#publisher=1c0e0d54-547d-4312-9dde-61539c24e22f";
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(stscr, s);
+})();
+</script><script type="text/javascript">
+  try {
+    document.domain = "wolframalpha.com";
+    context = parent ? parent : document;
+    } catch(e){}
+    try {
+        if (typeof(context.$) == "undefined") {
+            context = window;
+        } else {
+            $=context.$;
+        }
+    }
+    catch(e){ context = window; }
+
+
+try {
+
+  if (typeof context.jsonArray.popups.pod_0100 == "undefined" ) {
+    context.jsonArray.popups.pod_0100 = [];
+  }
+
+
+
+  context.jsonArray.popups.pod_0100.push( {"stringified": "pi","mInput": "Pi","mOutput": "", "popLinks": {} });
+  
+
+} catch(e) { }
+
+
+
+try {
+
+$("#results #pod_0100:not(iframe #pod_0100)")
+.add(".results-pod #pod_0100:not(iframe #pod_0100)")
+	.data("tempFileID", 'MSP981a1f83112f6g76b2000050f67cc48agefi1d')
+	.data("podIdentifier", '\x22Input\x22')
+	.data("podShortIdentifier", '\x22Input\x22')
+	.data("buttonStates", '\x22\x22')
+	.data("scanner", '\x22\x22');
+
+
+  $("#results #subpod_0100_1")
+  .add(".results-pod #subpod_0100_1")
+        .data("tempFileID", "MSP991a1f83112f6g76b200003c7000322h0943e1")
+        .data("cellDataTempFile", "MSP1001a1f83112f6g76b200000ea5d98he48g71ag");
+
+} catch(e){}
+
+
+
+try {
+
+  if (typeof context.jsonArray.popups.pod_0200 == "undefined" ) {
+    context.jsonArray.popups.pod_0200 = [];
+  }
+
+
+
+  context.jsonArray.popups.pod_0200.push( {"stringified": "3.1415926535897932384626433832795028841971693993751058...","mInput": "N[Pi, 71]","mOutput": "", "popLinks": {} });
+  
+
+} catch(e) { }
+
+
+
+try {
+
+$("#results #pod_0200:not(iframe #pod_0200)")
+.add(".results-pod #pod_0200:not(iframe #pod_0200)")
+	.data("tempFileID", 'MSP1021a1f83112f6g76b200003c2fcg9i2e8fgi4i')
+	.data("podIdentifier", '\x22DecimalApproximation\x22')
+	.data("podShortIdentifier", '\x22DecimalApproximation\x22')
+	.data("buttonStates", '\x22Decimal\x20approximation\x22\x20\x2D\x3E\x200')
+	.data("scanner", '\x22\x22');
+
+
+  $("#results #subpod_0200_1")
+  .add(".results-pod #subpod_0200_1")
+        .data("tempFileID", "MSP1041a1f83112f6g76b20000484ff82214597b8b")
+        .data("cellDataTempFile", "MSP1051a1f83112f6g76b20000111ded98d1ih3ei6");
+
+} catch(e){}
+
+
+
+try {
+
+  if (typeof context.jsonArray.popups.pod_0300 == "undefined" ) {
+    context.jsonArray.popups.pod_0300 = [];
+  }
+
+
+
+  context.jsonArray.popups.pod_0300.push( {"stringified": "pi is a transcendental number","mInput": "Element[Pi, Algebraics]","mOutput": "False", "popLinks": {} });
+  
+
+} catch(e) { }
+
+
+
+try {
+
+$("#results #pod_0300:not(iframe #pod_0300)")
+.add(".results-pod #pod_0300:not(iframe #pod_0300)")
+	.data("tempFileID", 'MSP1071a1f83112f6g76b2000058i0i5edd83c942i')
+	.data("podIdentifier", '\x22Property\x22')
+	.data("podShortIdentifier", '\x22Property\x22')
+	.data("buttonStates", '\x22\x22')
+	.data("scanner", '\x22\x22');
+
+
+  $("#results #subpod_0300_1")
+  .add(".results-pod #subpod_0300_1")
+        .data("tempFileID", "MSP1081a1f83112f6g76b200001ef3igh8iii5a792")
+        .data("cellDataTempFile", "MSP1091a1f83112f6g76b20000528703633dei7fgb");
+
+} catch(e){}
+
+
+
+try {
+
+$("#results #pod_0400:not(iframe #pod_0400)")
+.add(".results-pod #pod_0400:not(iframe #pod_0400)")
+	.data("tempFileID", '')
+	.data("podIdentifier", '\x22NumberLine\x22')
+	.data("podShortIdentifier", '')
+	.data("buttonStates", '')
+	.data("scanner", '\x22\x22');
+
+
+} catch(e){}
+
+
+
+try {
+
+  if (typeof context.jsonArray.popups.pod_0500 == "undefined" ) {
+    context.jsonArray.popups.pod_0500 = [];
+  }
+
+
+
+  context.jsonArray.popups.pod_0500.push( {"stringified": "[3; 7, 15, 1, 292, 1, 1, 1, 2, 1, 3, 1, 14, 2, 1, 1, 2, 2, 2, 2, 1, 84, 2, 1, 1, 15, ...]","mInput": "ContinuedFraction[Pi, 27]","mOutput": "{3, 7, 15, 1, 292, 1, 1, 1, 2, 1, 3, 1, 14, 2, 1, 1, 2, 2, 2, 2, 1, 84, 2, 1, 1, 15, 3}", "popLinks": {} });
+  
+
+} catch(e) { }
+
+
+
+try {
+
+$("#results #pod_0500:not(iframe #pod_0500)")
+.add(".results-pod #pod_0500:not(iframe #pod_0500)")
+	.data("tempFileID", 'MSP1121a1f83112f6g76b200003f47g08a5dh8g1i0')
+	.data("podIdentifier", '\x22ContinuedFraction\x22')
+	.data("podShortIdentifier", '\x22ContinuedFraction\x22')
+	.data("buttonStates", '\x22Continued\x20fraction\x22\x20\x2D\x3E\x20\x7B\x22Linear\x22,\x200,\x200,\x206\x7D')
+	.data("scanner", '\x22\x22');
+
+
+  $("#results #subpod_0500_1")
+  .add(".results-pod #subpod_0500_1")
+        .data("tempFileID", "MSP1151a1f83112f6g76b200000dcch3g1a7ceg6ci")
+        .data("cellDataTempFile", "MSP1161a1f83112f6g76b200002e28d95di399a309");
+
+} catch(e){}
+
+</script>
+<article id="footerad" class="hide fade"><div id="adText"><span id='footerAdvertisement'>Advertisement</span><a id='footerUpgrade' href='/pro/?src=footerad'>Avoid ads Upgrade to Wolfram|Alpha Pro &raquo;</a></div><div class="ad"><!-- PubMatic ad tag (Javascript) : WolframAlpha_728x90_BTF | http://www.wolframalpha.com | 728 x 90 Leaderboard --><iframe id='fPubmatic' src='/input/pubmatic_footer.jsp'></iframe></div></article>
+<div id="subpod_cdf"><div class="arrow"></div><a class="close">x</a><h3>CDF Interactivity</h3><p>Bring Wolfram|Alpha output to life with CDF interactivity.</p><img src="/images/pro/cdf-adstate.png" /><a class="bubblebtn giant-btn startfreetrial" id="subpod-cdf">
+           Start FREE Pro Trial
+            </a><br /><a href="/pro/?src=subpod-cdf" class="learn-pro">
+                Learn about all Pro features &raquo;
+            </a></div></body></html>
