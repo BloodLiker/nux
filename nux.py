@@ -1,57 +1,25 @@
-import socket
-import string
-import time
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
+
 import sys
+import irc
+import modules
 
-if sys.argv[1]:
-	server = sys.argv[1]
-port = 6667
+try:
+    network = sys.argv[3]
+    serverport = 6667
+    god = sys.argv[2]
+    if len(sys.argv) > 4:
+        serverport = int(sys.argv[4])
 
-irc = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-irc.connect((server, port))
-print irc.recv(4096)
-
-def send(data):
-	for line in data.split("\r\n"):
-		print line
-		irc.send(line+"\r\n")
-		time.sleep(0.5)
-def join(channel, sender):
-	if channel[0] == '#' and channel.find(',') == -1:
-		send('JOIN '+channel+'\r\n')
-	else:
-		send('PRIVMSG '+sender+' :huono kanava\r\n')
-def part(channel):
-	send('PART '+channel+'\r\n')
-def msg(to, msg):
-	send("PRIVMSG "+to+" :"+msf)
-
-send ("USER nux h h :kiltti botti (nux 2.0)")
-send ("NICK nux")
-
-while 1:
-	ircmsg = irc.recv(4096).strip("\n\r")
-	print ircmsg
-
-	if ircmsg.startswith("PING :"):
-		send("PONG :"+ircmsg.split("PING :")[1])
-	
-	nick = ''
-	action = ''
-	if ircmsg.split()[0].find("!") != -1:
-		nick = ircmsg[1:].split("!")[0]
-		action = ircmsg.split()[1]
-	print "nick: " + nick
-	print "action: " + action
-	
-	if action == "PRIVMSG" and ircmsg.split()[3].startswith(":!"):
-		cmd = ircmsg.split()[3][2:]
-		sender = nick
-		if ircmsg.split()[2].startswith("#"):
-			sender = ircmsg.split()[2]
-		
-		if cmd == "join": join(ircmsg.split()[4], sender)
-		elif cmd == "part": part(ircmsg.split()[4])
-		elif cmd == "quit": quit()
-	elif action == "INVITE":
-		join(ircmsg.split()[3][1:],"")		
+    bot = irc.Bot(network, serverport, sys.argv[1], 'pantterin botti')
+    bot.addGod(god)
+    
+    while 1:
+        if bot.cycle():
+            reload(irc)
+            copy = getattr(irc, 'Bot')
+            bot.__class__ = copy
+            print '\n\033[37;41m*** RELOADED MODULES ***\033[0m\n'
+except IndexError:
+    print 'Usage: nux.py <nick> <god> <network> [<port>]'
